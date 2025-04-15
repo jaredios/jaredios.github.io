@@ -1,131 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Jared De La Serna - Portfolio</title>
-    <style>
-        body {
-            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-            line-height: 1.6;
-            color: #333;
-            background-color: #f9f9f9;
-            max-width: 900px;
-            margin: 0 auto;
-            padding: 20px;
-        }
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Jared De La Serna - Portfolio</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      line-height: 1.6;
+      color: #333;
+      background-color: #f9f9f9;
+      max-width: 1100px;
+      margin: 0 auto;
+      padding: 20px;
+    }
 
-        header, footer {
-            text-align: center;
-            padding: 10px 0;
-        }
+    header, footer {
+      text-align: center;
+      padding: 10px 0;
+    }
 
-        h1, h2 {
-            color: #222;
-        }
+    h1, h2 {
+      color: #222;
+    }
 
-        a {
-            color: #0066cc;
-            text-decoration: none;
-        }
+    a {
+      color: #0066cc;
+      text-decoration: none;
+    }
+    a:hover {
+      text-decoration: underline;
+    }
 
-        a:hover {
-            text-decoration: underline;
-        }
+    /* ---------- NEW LAYOUT ---------- */
+    .main-content {
+      display: flex;          /* Flex container for 2 columns */
+      gap: 20px;              /* Spacing between columns */
+      margin-bottom: 20px;
+    }
 
-        section {
-            margin-bottom: 20px;
-            padding: 10px;
-            background-color: #fff;
-            box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-            border-radius: 5px;
-        }
+    /* Left Column (Resume) */
+    .left-column {
+      flex: 2;                /* Makes the left column wider */
+      display: flex;
+      flex-direction: column; /* Stack the sections vertically */
+      gap: 20px;
+    }
+    .left-column section {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-radius: 5px;
+      padding: 10px;
+    }
 
-        ul {
-            padding-left: 20px;
-        }
+    /* Right Column (Projects) */
+    .right-column {
+      flex: 1;                /* Makes the right column narrower */
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+    }
+    .right-column section {
+      background-color: #fff;
+      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+      border-radius: 5px;
+      padding: 10px;
+    }
+    /* -------------------------------- */
 
-    </style>
+    ul {
+      padding-left: 20px;
+    }
+  </style>
 </head>
 <body>
 
-<header>
+  <!-- HEADER -->
+  <header>
     <h1>Jared De La Serna</h1>
     <p>
-        San Diego, CA | (619) 386-7681 | 
-        <a href="mailto:jaredalexiscarmona@gmail.com">jaredalexiscarmona@gmail.com</a> | 
-        <a href="https://www.linkedin.com/in/jaredcarmona/">LinkedIn</a> | 
-        <a href="https://jaredios.github.io/">GitHub Pages</a>
+      San Diego, CA | (619) 386-7681 | 
+      <a href="mailto:jaredalexiscarmona@gmail.com">jaredalexiscarmona@gmail.com</a> | 
+      <a href="https://www.linkedin.com/in/jaredcarmona/">LinkedIn</a> | 
+      <a href="https://jaredios.github.io/">GitHub Pages</a>
     </p>
-</header>
+  </header>
 
-<section>
-    <h2>Professional Summary</h2>
-    <p>Data analyst skilled in Python, R, and SQL, with expertise in machine learning, predictive modeling, and statistical analysis. Passionate about solving complex problems and uncovering insights to help businesses make data-driven decisions.</p>
-</section>
+  <!-- MAIN CONTENT -->
+  <div class="main-content">
+    <!-- LEFT COLUMN (Resume) -->
+    <div class="left-column">
+      <section>
+        <h2>Professional Summary</h2>
+        <p>
+          Data analyst skilled in Python, R, and SQL, with expertise in machine learning, 
+          predictive modeling, and statistical analysis. Passionate about solving complex problems 
+          and uncovering insights to help businesses make data-driven decisions.
+        </p>
+      </section>
 
-<section>
-    <h2>Education</h2>
-    <p><strong>Bachelor of Science in Statistics (Data Science)</strong> | San Diego State University, Dec 2024</p>
-    <ul>
-        <li>Active member of Northeast Big Data Innovation Hub funded by Columbia University.</li>
-        <li>Active member of COVID Information Commons funded by Columbia University.</li>
-    </ul>
-</section>
+      <section>
+        <h2>Education</h2>
+        <p>
+          <strong>Bachelor of Science in Statistics (Data Science)</strong> |
+          San Diego State University, Dec 2024
+        </p>
+        <ul>
+          <li>Active member of Northeast Big Data Innovation Hub funded by Columbia University.</li>
+          <li>Active member of COVID Information Commons funded by Columbia University.</li>
+        </ul>
+      </section>
 
-<section>
-    <h2>Work Experience</h2>
+      <section>
+        <h2>Work Experience</h2>
+        <h3>Research Assistant | Student Analytics Research Lab | Apr 2024 – Jul 2024</h3>
+        <ul>
+          <li>Managed data quality by exporting and cleaning files such as CSV, XLS, and JSON.</li>
+          <li>Created interactive dashboards and infographics using Qualtrics to visualize data.</li>
+          <li>Developed surveys for research purposes, which were distributed to gather data 
+              representing the student body.</li>
+        </ul>
 
-    <h3>Research Assistant | Student Analytics Research Lab | Apr 2024 – Jul 2024</h3>
-    <ul>
-        <li>Managed data quality by exporting and cleaning files such as CSV, XLS and JSON.</li>
-        <li>Created interactive dashboards and infographics using Qualtrics to visualize data.</li>
-        <li>Developed surveys for research purposes, which were distributed by researchers to the university to gather data representing the student body.</li>
-    </ul>
+        <h3>Secretary | Society of Statisticians and Actuaries, San Diego | Aug 2022 – Dec 2023</h3>
+        <ul>
+          <li>Coordinated organization communication with students and faculty.</li>
+          <li>Scheduled and facilitated events, guest speakers, and meetings efficiently.</li>
+        </ul>
 
-    <h3>Secretary | Society of Statisticians and Actuaries, San Diego | Aug 2022 – Dec 2023</h3>
-    <ul>
-        <li>Coordinated organization communication with students and faculty.</li>
-        <li>Scheduled and facilitated events, guest speakers, and meetings efficiently.</li>
-    </ul>
+        <h3>Park Quality Ambassador | SeaWorld | Oct 2019 – Present</h3>
+        <ul>
+          <li>Contributed to a 17% increase in guest satisfaction scores from 2021 
+              by upholding park cleanliness standards.</li>
+          <li>Collaborated with 20+ staff members per shift to meet operational goals.</li>
+        </ul>
+      </section>
 
-    <h3>Park Quality Ambassador | SeaWorld | Oct 2019 – Present</h3>
-    <ul>
-        <li>Contributed to a 17% increase in guest satisfaction scores from 2021 by upholding park cleanliness standards.</li>
-        <li>Worked in a fast-paced, team-oriented environment, collaborating with 20+ staff members per shift to meet operational goals.</li>
-    </ul>
-</section>
+      <section>
+        <h2>Skills and Certifications</h2>
+        <ul>
+          <li><strong>Proficient Languages:</strong> Python, R, Excel, SQL, SAS, Java, C++</li>
+          <li><strong>Skills:</strong> Statistical Computing, Data Management, Machine Learning, 
+              Data Visualization, Power BI, Pivot Tables, VLOOKUP, Data Cleaning, Customer Service</li>
+          <li><strong>Certifications:</strong> Responsible Conduct of Research (HSR), 
+              Information Privacy Security (IPS), Responsible Conduct of Research (RCR)</li>
+        </ul>
+      </section>
+    </div>
 
-<section>
-    <h2>Projects</h2>
+    <!-- RIGHT COLUMN (Projects) -->
+    <div class="right-column">
+      <section>
+        <h2>Projects</h2>
+        <!-- Example project format -->
+        <h3>UFC Prediction Machine Learning</h3>
+        <ul>
+          <li>Used Python and Scikit-learn to design a machine learning system for UFC fights.</li>
+          <li>Integrated Random Forest and XGBoost models to predict fight outcomes and statistics.</li>
+          <li>Achieved 85% accuracy.</li>
+          <!-- Placeholder link or button (not ready yet) -->
+          <p><em>Project Link Coming Soon</em></p>
+        </ul>
 
-    <h3>UFC Prediction Machine Learning</h3>
-    <ul>
-        <li>Used Python and Scikit-learn to design a machine learning system for UFC fights.</li>
-        <li>Integrated Random Forest and XGBoost models to predict fight outcomes and statistics.</li>
-        <li>Achieved 85% accuracy.</li>
-    </ul>
+        <h3>E-Commerce Data Analytics</h3>
+        <ul>
+          <li>Developed and evaluated predictive models using logistic regression, decision trees, 
+              and gradient descent.</li>
+          <li>Analyzed online shopper behavior, achieving 88% accuracy.</li>
+          <li>Used Python libraries like Pandas for data manipulation and seaborn for visualizations.</li>
+          <!-- Placeholder link or button (not ready yet) -->
+          <p><em>Project Link Coming Soon</em></p>
+        </ul>
 
-    <h3>E-Commerce Data Analytics</h3>
-    <ul>
-        <li>Developed and evaluated predictive models using logistic regression, decision trees, and gradient descent.</li>
-        <li>Analyzed online shopper behavior, achieving 88% accuracy.</li>
-        <li>Used Python libraries like Pandas for data manipulation and seaborn for visualizations.</li>
-    </ul>
-</section>
-
-<section>
-    <h2>Skills and Certifications</h2>
-    <ul>
-        <li><strong>Proficient Languages:</strong> Python, R, Excel, SQL, SAS, Java, C++</li>
-        <li><strong>Skills:</strong> Statistical Computing, Data Management, Machine Learning, Data Visualization, Power BI, Pivot Tables, VLOOKUP, Data Cleaning, Customer Service</li>
-        <li><strong>Certifications:</strong> Responsible Conduct of Research (HSR), Information Privacy Security (IPS), Responsible Conduct of Research (RCR)</li>
-    </ul>
-</section>
-
-<footer>
+        <!-- You can add more projects here as needed -->
+      </section>
+    </div>
+  </div>
+  
+  <!-- FOOTER -->
+  <footer>
     <p>&copy; 2025 Jared De La Serna. All rights reserved.</p>
-</footer>
+  </footer>
 
 </body>
 </html>
