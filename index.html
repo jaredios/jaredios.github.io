@@ -2,33 +2,25 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8" />
-  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
   <title>Jared De La Serna - Portfolio</title>
   <style>
-    /* Overall Page Styling */
     body {
       font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-      /* Reduce font size slightly */
-      font-size: 0.9rem;
-      line-height: 1.4;
+      line-height: 1.6;
       color: #333;
-      /* Reduce max-width to make it look smaller */
-      max-width: 900px;
+      background-color: #f9f9f9;
+      max-width: 1100px;
       margin: 0 auto;
       padding: 20px;
-      background-color: #f9f9f9;
     }
-
     header, footer {
       text-align: center;
       padding: 10px 0;
     }
-
-    h1, h2, h3 {
+    h1, h2 {
       color: #222;
-      margin-top: 0;
     }
-
     a {
       color: #0066cc;
       text-decoration: none;
@@ -36,14 +28,12 @@
     a:hover {
       text-decoration: underline;
     }
-
-    /* ---------- LAYOUT ---------- */
+    /* Two-column layout */
     .main-content {
       display: flex;
       gap: 20px;
       margin-bottom: 20px;
     }
-
     /* Left Column (Resume) */
     .left-column {
       flex: 2;
@@ -51,54 +41,32 @@
       flex-direction: column;
       gap: 20px;
     }
-
     .left-column section {
       background-color: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       border-radius: 5px;
       padding: 10px;
     }
-
     /* Right Column (Projects) */
     .right-column {
       flex: 1;
       display: flex;
       flex-direction: column;
+      gap: 20px;
     }
-    
-    /* Projects Section */
     .right-column section {
       background-color: #fff;
       box-shadow: 0 2px 4px rgba(0,0,0,0.1);
       border-radius: 5px;
       padding: 10px;
     }
-
-    /* 2-Column Grid for Projects */
-    .projects-grid {
-      display: grid;
-      grid-template-columns: 1fr 1fr; /* 2 columns */
-      gap: 20px;                     /* space between columns/items */
-      margin-top: 10px;
-    }
-
-    /* Individual project item styling */
-    .project-item {
-      background-color: #fff;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.1);
-      border-radius: 5px;
-      padding: 10px;
-    }
-
     ul {
       padding-left: 20px;
-      margin-top: 0;
     }
   </style>
 </head>
 <body>
-
-  <!-- HEADER -->
+  <!-- Header -->
   <header>
     <h1>Jared De La Serna</h1>
     <p>
@@ -109,9 +77,9 @@
     </p>
   </header>
 
-  <!-- MAIN CONTENT -->
+  <!-- Main Content -->
   <div class="main-content">
-    <!-- LEFT COLUMN (Resume) -->
+    <!-- Left Column: Resume -->
     <div class="left-column">
       <section>
         <h2>Professional Summary</h2>
@@ -168,79 +136,71 @@
       </section>
     </div>
 
-    <!-- RIGHT COLUMN (Projects) -->
+    <!-- Right Column: Projects -->
     <div class="right-column">
       <section>
         <h2>Projects</h2>
-        <div class="projects-grid">
-          <!-- Project 1 -->
-          <div class="project-item">
-            <h3>UFC Prediction Machine Learning</h3>
-            <ul>
-              <li>Used Python and Scikit-learn to design a machine learning system for UFC fights.</li>
-              <li>Integrated Random Forest and XGBoost models to predict fight outcomes and statistics.</li>
-              <li>Achieved 85% prediction accuracy.</li>
-              <li>
-                <a href="https://github.com/jaredios/UFC-Machine-Learning/blob/main/UFC%20Machine%20Learning%20Project.pdf" target="_blank" rel="noopener noreferrer">
-                  View Project Report
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/jaredios/UFC-Machine-Learning/blob/main/UFC_MachineLearning_Project.ipynb" target="_blank" rel="noopener noreferrer">
-                  View Compiled Code
-                </a>
-              </li>
-            </ul>
-          </div>
 
-          <!-- Project 2 -->
-          <div class="project-item">
-            <h3>WWDC Transcript Analysis</h3>
-            <ul>
-              <li>Extracted and parsed WWDC keynote transcripts using Newspaper3k and BeautifulSoup.</li>
-              <li>Calculated MSTTR scores and Flesch-Kincaid readability to assess language complexity.</li>
-              <li>Visualized transcript trends with scatter plots and linear regression across multiple years.</li>
-              <li>
-                <a href="https://github.com/jaredios/Project-of-WWDC/blob/main/Report%20Project%20WWDC.pdf" target="_blank" rel="noopener noreferrer">
-                  View Project Report
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/jaredios/Project-of-WWDC/blob/main/WWDC_Knitted_Code.pdf" target="_blank" rel="noopener noreferrer">
-                  View Knitted Code
-                </a>
-              </li>
-            </ul>
-          </div>
+        <!-- UFC Prediction Machine Learning Project -->
+        <h3>UFC Prediction Machine Learning</h3>
+        <ul>
+          <li>Used Python and Scikit-learn to design a machine learning system for UFC fights.</li>
+          <li>Integrated Random Forest and XGBoost models to predict fight outcomes and statistics.</li>
+          <li>Achieved 85% prediction accuracy.</li>
+          <li>
+            <a href="https://github.com/jaredios/UFC-Machine-Learning/blob/main/UFC%20Machine%20Learning%20Project.pdf" target="_blank" rel="noopener noreferrer">
+              View Project Report
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/jaredios/UFC-Machine-Learning/blob/main/UFC_MachineLearning_Project.ipynb" target="_blank" rel="noopener noreferrer">
+              View Compiled Code
+            </a>
+          </li>
+        </ul>
 
-          <!-- Project 3 -->
-          <div class="project-item">
-            <h3>UFC Missing Values Imputation</h3>
-            <ul>
-              <li>Developed imputation models (mean & predictive mean matching) to address missing “reach.”</li>
-              <li>Performed correlation studies and regression to validate and visualize imputed data.</li>
-              <li>Ensured realistic trends by examining t-tests and summary stats on final imputation results.</li>
-              <li>
-                <a href="https://github.com/jaredios/UFC-Missing-Values/blob/main/finalprojectfor410.pdf" target="_blank" rel="noopener noreferrer">
-                  View Final Report
-                </a>
-              </li>
-              <li>
-                <a href="https://github.com/jaredios/UFC-Missing-Values/blob/main/UFC%20Knitted%20Code.pdf" target="_blank" rel="noopener noreferrer">
-                  View Knitted Code
-                </a>
-              </li>
-            </ul>
-          </div>
-        </div>
+        <!-- WWDC Transcript Analysis Project -->
+        <h3>WWDC Transcript Analysis</h3>
+        <ul>
+          <li>Extracted and parsed WWDC keynote transcripts using Newspaper3k and BeautifulSoup to create a comprehensive text corpus.</li>
+          <li>Implemented advanced textual analysis—calculating MSTTR scores and Flesch-Kincaid readability—to assess language complexity over the years.</li>
+          <li>Developed visualizations, including scatter plots with linear regression, to illustrate trends in transcript readability and lexical diversity.</li>
+          <li>
+            <a href="https://github.com/jaredios/Project-of-WWDC/blob/main/Report%20Project%20WWDC.pdf" target="_blank" rel="noopener noreferrer">
+              View Project Report
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/jaredios/Project-of-WWDC/blob/main/WWDC_Knitted_Code.pdf" target="_blank" rel="noopener noreferrer">
+              View Knitted Code
+            </a>
+          </li>
+        </ul>
+
+        <!-- UFC Missing Values Imputation Project -->
+        <h3>UFC Missing Values Imputation</h3>
+        <ul>
+          <li>Developed imputation models using both mean imputation and predictive mean matching to address missing fighter statistics, focusing on the “reach” variable.</li>
+          <li>Performed extensive exploratory data analysis including correlation studies, scatter plots, and linear regression to validate the imputed values.</li>
+          <li>Assessed the impact of imputation through statistical tests (t-tests) and summary metrics to ensure realistic trends in fighter performance.</li>
+          <li>
+            <a href="https://github.com/jaredios/UFC-Missing-Values/blob/main/finalprojectfor410.pdf" target="_blank" rel="noopener noreferrer">
+              View Final Report
+            </a>
+          </li>
+          <li>
+            <a href="https://github.com/jaredios/UFC-Missing-Values/blob/main/UFC%20Knitted%20Code.pdf" target="_blank" rel="noopener noreferrer">
+              View Knitted Code
+            </a>
+          </li>
+        </ul>
       </section>
     </div>
   </div>
 
-  <!-- FOOTER -->
+  <!-- Footer -->
   <footer>
     <p>&copy; 2025 Jared De La Serna. All rights reserved.</p>
   </footer>
-
 </body>
 </html>
